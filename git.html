@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вступ – Git</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+  <div class="header_top" id="header_top">
+    <div class="conteiner">
+      <div class="navs">
+        <a href="index.html" class="logo"><img src="images/logo.png" alt="Логотип"></a>
+        <div class="nav">
+          <a href="#" class="nav__link">Про нас</a>
+          <a href="#" class="nav__link">Навчання</a>
+          <a href="#" class="nav__link">Кабінети</a>
+          <a href="#map" class="nav__link">Адреса</a>
+        </div>
+        <div class="novik">
+          <p>Яна Кіреєва</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<main class="conteiner">
+
+  <section class="content">
+    <h2>Коротка інформація про системи контролю версій та Git зокрема</h2>
+    <p>
+      Системи контролю версій (Version Control Systems, VCS) — це інструменти, які дозволяють:
+      <br>• зберігати історію змін у файлах (найчастіше у програмному коді);
+      <br>• відстежувати, хто і коли вніс зміни;
+      <br>• повертатися до попередніх версій;
+      <br>• працювати над одним проєктом у команді без “конфліктів” у файлах.
+    </p>
+    <p>
+      Є два основних типи:
+      <br>• Локальні — історія зберігається лише на одному комп’ютері.
+      <br>• Розподілені (DVCS) — кожен розробник має повну копію репозиторію.
+    </p>
+    <p>
+      <strong>Git</strong> — найпопулярніша розподілена система контролю версій. Вона дозволяє:
+      <br>• працювати над проєктом як індивідуально, так і в команді;
+      <br>• зберігати всі версії коду в репозиторії;
+      <br>• створювати гілки (branches);
+      <br>• об’єднувати зміни (merge, rebase);
+      <br>• легко відновлювати попередні версії у випадку помилок.
+    </p>
+  </section>
+
+  <section class="content">
+    <h2>Основні можливості та переваги використання Git</h2>
+
+    <h3>Основні можливості Git</h3>
+    <ul>
+      <li>Відстеження змін у файлах і повна історія версій.</li>
+      <li>Робота з гілками (branches) для паралельної розробки.</li>
+      <li>Злиття (merge/rebase) різних гілок у єдиний проєкт.</li>
+      <li>Відкат (rollback) до будь-якої попередньої версії.</li>
+      <li>Робота офлайн — більшість команд виконуються без інтернету.</li>
+      <li>Розподілена структура — кожен користувач має повний репозиторій.</li>
+      <li>Командна робота без конфліктів.</li>
+    </ul>
+
+    <h3>Переваги Git</h3>
+    <ul>
+      <li>Швидкість виконання операцій.</li>
+      <li>Надійність — історія змін зберігається всюди.</li>
+      <li>Гнучкість — підходить для будь-яких проєктів.</li>
+      <li>Можливість підтримки кількох версій продукту.</li>
+      <li>Популярність та інтеграції (GitHub, GitLab, Bitbucket).</li>
+    </ul>
+  </section>
+
+  <section class="content">
+    <h2 >10 базових команд роботи в Git</h2>
+    <ol>
+      <li><b>git init</b> – створює новий локальний репозиторій.</li>
+      <li><b>git clone</b> – завантажує копію віддаленого репозиторію.</li>
+      <li><b>git branch</b> – робота з гілками.</li>
+      <li><b>git checkout</b> – перехід між гілками.</li>
+      <li><b>git add</b> – додає зміни у staging area.</li>
+      <li><b>git commit</b> – зберігає зміни у локальному репозиторії.</li>
+      <li><b>git status</b> – показує стан робочої директорії.</li>
+      <li><b>git log</b> – історія комітів.</li>
+      <li><b>git pull</b> – отримання оновлень з віддаленого репозиторію.</li>
+      <li><b>git push</b> – надсилання змін у віддалений репозиторій.</li>
+    </ol>
+  </section>
+
+<section class="content">
+  <h2>Сертифікат курсу по Git</h2>
+  <div class="certificate">
+    <img src="images/sertuficat.jpg" alt="Сертифікат Git">
+  </div>
+</section>
+
+
+<section class="content">
+  <h2>Джерела інформації</h2>
+  <ul class="sources">
+    <li><a href="https://www.artofba.com/uk/post/version-control-system-git-vs-svn" target="_blank">Посилання №1</a></li>
+    <li><a href="https://production-ready.dev/index.html%3Fp=8137.html" target="_blank">Посилання №2</a></li>
+  </ul>
+</section>
+
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__address">
+      <span class="address-title">АДРЕСА</span><br><br>
+      <span class="address-text">м. Нововолинськ, вулиця Шахтарська, 12</span>
+    </div>
+
+    <div class="footer__icons">
+      <div class="footer__icons1">
+        <img src="images/Vector.png" alt="">
+        <div>Telegram</div>
+      </div>
+      <div class="footer__icons1">
+        <img src="images/Vector3.png" alt="">
+        <div>Instagram</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mapa" id="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2525.565534836579!2d24.152374076573615!3d50.72799897164642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4724f3c79a0d71a3%3A0x7574dca39874603f!2z0J3QvtCy0L7QstC-0LvQuNC90YHRjNC60LjQuSDQtdC70LXQutGC0YDQvtC80LXRhdCw0L3RltGH0L3QuNC5INC60L7Qu9C10LTQtg!5e0!3m2!1suk!2sua!4v1757428343474!5m2!1suk!2sua"
+      width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <div class="footer__bottom">
+    © 2025 Яна Кіреєва. Усі права захищені.
+  </div>
+</footer>
+
+</body>
+</html>

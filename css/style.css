@@ -1,0 +1,336 @@
+body{
+  background-color: black;
+}
+.header{
+    width:100%;
+    height:800px;
+    background: black;
+    background-position: center;
+    margin-bottom: 20px;  
+   
+}
+.conteiner{
+    width: 100%;  
+    max-width: 1220px; 
+    margin: 0 auto;
+  
+}
+.header_top{ 
+    width: 100%;
+    height:90px;
+    display: flex;
+    align-items: center;
+   
+}
+.navs{
+    width: 100%;
+    display: flex;
+    height:90px;
+    justify-content: space-between;
+    align-items: center;  
+    text-decoration: none;
+    color: #FFFFFF; 
+    
+}
+.logo{
+    height: auto;
+    width: 80px; 
+    
+}
+.nav{  
+    width: 50%;
+    letter-spacing: 0.04em;
+    display: flex;
+    font-size: 17px;
+    justify-content: space-around;
+    font-family: 'Montserrat';
+    
+       
+}
+.nav__link{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    padding-bottom: 5px; 
+    transition: color 0.3s ease;
+    text-transform:uppercase;
+}
+.novik{
+    display: flex;
+    color: white;
+    align-items: center;  
+    justify-content: center;
+}
+.novik p{
+    margin-left: 7px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-family: 'Montserrat';
+}
+.header_item{
+    width: 100%;
+    height: 710px;
+    display: flex;
+   
+      
+}
+.header_item_1{
+    width: 50%;
+    height: 660px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: flex-start;
+}
+.header_item_1 h1{
+    font-size: 87px;
+    font-family: 'Georgia';
+    font-weight: 400;
+    color: white;
+}
+.header_item_1 p{
+    font-size: 23px;
+    font-family: 'Montserrat';
+    font-weight: 200;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    color: white;
+}
+.header_button{
+    display: flex;
+align-items: center;
+justify-content: center;
+width: 240px;
+height: 50px;
+text-align: center;
+background: transparent; /* або видалити цей рядок */
+margin-top: 35px;
+text-decoration: none;
+color: white;
+font-family: 'Montserrat';
+    font-weight: 200;
+font-size: 24px;
+border: 1px solid white; /* чорна рамка */
+
+}
+
+.header_item_2{
+    width: 50%;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+
+.ecran2{
+   width:100%;
+    height:700px;
+    background: black;
+    color: white;
+    background-position: center;
+    margin-bottom: 100px;  
+}
+.ecran2_item {
+  text-align: center;
+}
+
+.ecran2_item h1 {
+  font-size: 3rem; /* великий заголовок */
+  margin-bottom: 20px;
+   font-family: 'Georgia';
+    font-weight: 400;
+}
+
+.ecran2_item p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-family: 'Montserrat';
+    font-weight: 200;
+    
+}
+.ecran2_item h2 {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-family: 'Montserrat';
+    font-weight: 200;
+    margin-bottom: 15px;
+    
+}
+.ecran2 img{
+  width: 100%;
+}
+
+
+
+
+
+
+.mapa{
+    margin-bottom: 20px;
+}
+
+  
+.footer {
+    
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  .footer__top {
+    background-color: black;
+ 
+  }
+.footer__address {
+  text-align: center;
+
+  line-height: 1.5;
+}
+
+.address-title {
+  font-size: 2rem;
+  font-family: 'Georgia', serif;
+  font-weight: 400;
+  color: white;
+}
+
+.address-text {
+  font-size: 1rem;
+   font-family: 'Montserrat';
+  font-weight: 300; /* тонкий шрифт */
+color: white;
+}
+
+
+  .footer__icons {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    padding: 30px 0;
+  }
+  
+  .footer__icons1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Montserrat';
+    line-height: 1.5;
+  }
+  
+  .footer__icons1 img {
+    width: 46px;
+    height: 46px;
+    
+
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .footer__bottom {
+    padding: 25px;
+    font-size: 14px;
+    color: white;
+    font-family: 'Montserrat';
+    text-align: center;
+  }
+   
+
+
+
+
+
+  .content {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto 60px;
+}
+
+.content h2 {
+  font-size: 2rem;
+  font-family: 'Georgia';
+  font-weight: 400;
+  margin-bottom: 25px;
+  color: white;
+  text-align: center;
+}
+
+.content h3 {
+  font-size: 1.5rem;
+  font-family: 'Georgia';
+  font-weight: 400;
+  margin: 20px 0 15px;
+  color: white;
+}
+
+.content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-family: 'Montserrat';
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: #e6e6e6;
+}
+
+.content ul,
+.content ol {
+  margin: 15px 0 25px 40px;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-family: 'Montserrat';
+  color: #dddddd;
+  
+}
+
+.content ul li,
+.content ol li {
+  margin-bottom: 10px;
+  
+   list-style: none;
+}
+.certificate {
+  text-align: center;
+  margin-top: 20px;
+}
+.content a {
+ 
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color:#dddddd ; 
+  transition: color 0.3s ease;
+}
+
+.certificate img {
+  max-width: 80%;  /* зображення не більше 80% ширини контейнера */
+  height: auto;    /* пропорції збережені */
+  border-radius: 8px; /* легке заокруглення (не обов’язково) */
+  box-shadow: 0 4px 20px rgba(0,0,0,0.6); /* для гарного вигляду */
+}
+.sources {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.sources li {
+  margin: 10px 0;
+}
+
+.sources a {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: #4da6ff; /* синій для посилань */
+  transition: color 0.3s ease;
+}
+
+.sources a:hover {
+  color: #82c7ff; /* світліший відтінок при наведенні */
+  
+}
