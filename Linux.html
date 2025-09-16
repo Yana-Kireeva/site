@@ -89,34 +89,35 @@
   <section class="content">
     <h2 >BASH-cкрипт, що імітує авторизацію в системі в текстовому режимі</h2>
  <p> 
-#!/bin/bash
+<li>#!/bin/bash</li>
 
-# Імітація авторизації з 3 спробами
+<li># Імітація авторизації з 3 спробами</li>
 
-MAX_TRIES=3
-TRIES=0
-SUCCESS=0
+<li>MAX_TRIES=3</li>
+<li>TRIES=0</li>
+<li>SUCCESS=0</li>
 
-echo "Ласкаво просимо! Будь ласка, авторизуйтесь."
+<li>echo "Ласкаво просимо! Будь ласка, авторизуйтесь."</li>
 
-while [[ $TRIES -lt $MAX_TRIES ]]; do
-    read -p "1) Логін: " login
-    read -sp "2) Пароль: " pass
-    echo ""
+<li>while [[ $TRIES -lt $MAX_TRIES ]]; </li>
+  <li>do</li>
+    <li>read -p "1) Логін: " login</li>
+   <li> read -sp "2) Пароль: " pass </li>
+   <li> echo ""</li>
     
-    if [[ "$login" == "admin" && "$pass" == "1234" ]]; then
-        echo "Авторизація успішна! Вітаємо, $login."
-        SUCCESS=1
-        break
-    else
-        TRIES=$((TRIES + 1))
-        echo "Невірний логін або пароль. Спроба $TRIES з $MAX_TRIES."
-    fi
-done
+   <li> if [[ "$login" == "admin" && "$pass" == "1234" ]]; then</li>
+       <li> echo "Авторизація успішна! Вітаємо, $login." </li>
+        <li>SUCCESS=1</li>
+       <li> break</li>
+  <li>  else</li>
+       <li> TRIES=$((TRIES + 1)) </li>
+       <li> echo "Невірний логін або пароль. Спроба $TRIES з $MAX_TRIES."</li>
+  <li>  fi </li>
+<li>done </li>
 
-if [[ $SUCCESS -eq 0 ]]; then
-    echo "Вхід заблоковано. Спробуйте пізніше."
-fi
+<li> if [[ $SUCCESS -eq 0 ]]; then </li>
+  <li>  echo "Вхід заблоковано. Спробуйте пізніше." </li>
+<li> fi </li>
  </p>
 </section>
 
@@ -165,6 +166,7 @@ fi
 
 </body>
 </html>
+
 
 
 
