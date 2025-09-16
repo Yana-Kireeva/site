@@ -89,35 +89,36 @@
   <section class="content">
     <h2 >BASH-cкрипт, що імітує авторизацію в системі в текстовому режимі</h2>
     <ol>
-      <li><b>Скрипт</b> – #!/bin/bash
+      <li><b>Скрипт</b> </li> 
+      <li>#!/bin/bash</li>
 
-# Імітація авторизації з 3 спробами
+<li># Імітація авторизації з 3 спробами</li>
 
-MAX_TRIES=3
+<li>MAX_TRIES=3
 TRIES=0
-SUCCESS=0
+SUCCESS=0</li>
 
-echo "Ласкаво просимо! Будь ласка, авторизуйтесь."
+<li>echo "Ласкаво просимо! Будь ласка, авторизуйтесь."</li>
 
-while [[ $TRIES -lt $MAX_TRIES ]]; do
+<li>while [[ $TRIES -lt $MAX_TRIES ]]; do
     read -p "1) Логін: " login
     read -sp "2) Пароль: " pass
-    echo ""
+    echo ""</li>
     
-    if [[ "$login" == "admin" && "$pass" == "1234" ]]; then
+   <li> if [[ "$login" == "admin" && "$pass" == "1234" ]]; then
         echo "Авторизація успішна! Вітаємо, $login."
         SUCCESS=1
-        break
-    else
+        break</li>
+  <li>  else
         TRIES=$((TRIES + 1))
         echo "Невірний логін або пароль. Спроба $TRIES з $MAX_TRIES."
-    fi
-done
+    fi</li>
+<li>done
 
 if [[ $SUCCESS -eq 0 ]]; then
     echo "Вхід заблоковано. Спробуйте пізніше."
-fi
-.</li>
+fi</li>
+
       
     </ol>
   </section>
@@ -174,6 +175,7 @@ fi
 
 </body>
 </html>
+
 
 
 
