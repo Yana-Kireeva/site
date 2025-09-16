@@ -65,12 +65,8 @@
     <ul>
       <li>Основні команди</li>
 <li> • pwd – показує поточний робочий каталог</li>
-pwd
-# /home/user/Documents
 
 <li>echo – виводить текст у термінал</li>
-echo "Hello, Linux!"
-# Hello, Linux
 
 <li>ls – показує список файлів і папок</li>
 
@@ -91,18 +87,38 @@ echo "Hello, Linux!"
   </section>
 
   <section class="content">
-    <h2 >10 базових команд роботи в Git</h2>
+    <h2 >BASH-cкрипт, що імітує авторизацію в системі в текстовому режимі</h2>
     <ol>
-      <li><b>git init</b> – створює новий локальний репозиторій.</li>
-      <li><b>git clone</b> – завантажує копію віддаленого репозиторію.</li>
-      <li><b>git branch</b> – робота з гілками.</li>
-      <li><b>git checkout</b> – перехід між гілками.</li>
-      <li><b>git add</b> – додає зміни у staging area.</li>
-      <li><b>git commit</b> – зберігає зміни у локальному репозиторії.</li>
-      <li><b>git status</b> – показує стан робочої директорії.</li>
-      <li><b>git log</b> – історія комітів.</li>
-      <li><b>git pull</b> – отримання оновлень з віддаленого репозиторію.</li>
-      <li><b>git push</b> – надсилання змін у віддалений репозиторій.</li>
+      <li><b>Скрипт</b> – #!/bin/bash
+
+# Імітація авторизації з 3 спробами
+
+MAX_TRIES=3
+TRIES=0
+SUCCESS=0
+
+echo "Ласкаво просимо! Будь ласка, авторизуйтесь."
+
+while [[ $TRIES -lt $MAX_TRIES ]]; do
+    read -p "1) Логін: " login
+    read -sp "2) Пароль: " pass
+    echo ""
+    
+    if [[ "$login" == "admin" && "$pass" == "1234" ]]; then
+        echo "Авторизація успішна! Вітаємо, $login."
+        SUCCESS=1
+        break
+    else
+        TRIES=$((TRIES + 1))
+        echo "Невірний логін або пароль. Спроба $TRIES з $MAX_TRIES."
+    fi
+done
+
+if [[ $SUCCESS -eq 0 ]]; then
+    echo "Вхід заблоковано. Спробуйте пізніше."
+fi
+.</li>
+      
     </ol>
   </section>
 
@@ -158,6 +174,7 @@ echo "Hello, Linux!"
 
 </body>
 </html>
+
 
 
 
